@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/css_for_application.css">
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+
+                <li> <a   href="query.html">query</a> </li>
+
+            </ul>
+
+        </div>
+        </br>
+        </br>
+        <script>
+            function getval(sel)
+            {
+
+                document.getElementById("myForm").submit();
+
+            }
+        </script>
+        <form action="../Controller/Controller_to_save_data.php/process_request" id="myForm" > 
+            <div id="head">
+
+                <select  name="category" onchange="getval(this);">
+                    <option value="select">select model of bike</option>
+                    <option value="Tvs1" >Tvs1</option>
+                    <option value="Tvs2">Tvs2</option>
+                    <option value="Tvs3">Tvs3</option>
+                </select>
+            </div>
+        </form>
+    </body>
+</html>
